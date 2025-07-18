@@ -242,7 +242,7 @@ footer{
     background-color: #0A0826;
 }
 
-footer h2,p,
+footer>h2,footer>p,
 .social-media-container{
     color: #FFFFFF;
 }
@@ -253,7 +253,7 @@ footer h2{
     line-height: auto;
 }
 
-footer p {
+footer>p {
     font-size: 0.875rem;
     line-height: 24px;
     color: #D9DBE1;
