@@ -65,7 +65,11 @@ nav  li{
     width: calc(2 * (100% )/3)
 }
 
- .left-section h2, p{
+ .left-section h2{
+    margin-bottom: 16px;
+
+}
+ .left-section>p{
     margin-bottom: 16px;
 
 }
@@ -166,7 +170,7 @@ line-height: 70px;
 
 
 
-.product h3{
+.product>h3{
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 40px;
@@ -203,7 +207,7 @@ line-height: 70px;
 
 
 
-.feature-content h4{
+.feature-content>h4{
 
     font-size: 1.8rem;
     font-weight: bold;
@@ -247,7 +251,7 @@ footer>h2,footer>p,
     color: #FFFFFF;
 }
 
-footer h2{
+footer>h2{
     padding-top: 50px ;
     font-size: 1.5rem;
     line-height: auto;
