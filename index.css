@@ -110,15 +110,130 @@ line-height: 70px;
 
 
 .brand-section{
-    width: 70%;
+    width: 80%;
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
-   
-);
+    
+}
 
+.brand-section img{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+/* production section  */
+.collections-section{
+    width: 80%;
+    margin: 100px auto;
+}
+
+.collections-section h2{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    color: #3A3A3A;
+    margin: 30px auto;
 
 }
+
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+    
+}
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.img-product img{
+    margin-bottom: 16px;
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+
+
+.product h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 6px;
+}
+
+.prize{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(0,0,0,0.87);
+    
+}
+
+.description{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    line-height: 143%;
+    color:#787885 ;
+    font-size: 0.875rem;
+    letter-spacing: 1.8%;
+}
+
+
+/* feature section  */
+.feature-section{
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 100px auto;
+}
+
+
+
+.feature-content h4{
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 60px;
+    margin-top: 16px;
+    color: #0A0826;
+}
+
+.feature-content p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+
+.btn2{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
 
 
 
@@ -152,16 +267,46 @@ line-height: 70px;
     .right-section{
         width: calc((100% - 40px)/2)
     }
+
+    .brand-section{
+        flex-wrap: wrap;
+    }
+
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+     .feature-section{
+        flex-direction: column-reverse;
+        gap:30px;
+    }
+
+    .feature-content{
+        text-align: center;
+        width: 80%;
+ 
+    }
+    .btn2{
+        margin: 0 auto;
+    }
+
+   
+
+ 
 }
 
 /* mobile device */
 @media screen and (max-width:576px) {
+    nav h3{
+        font-size: 1rem;
+    }
     .nav-item{
         display: none;
     }
 
     .hamburger_menu{
         display: block;
+        margin-right: 10px;
     }
 
     .hero-section{
@@ -186,5 +331,34 @@ line-height: 70px;
 
     .btn{
         margin: 0 auto;
+    }
+
+    .brand-section{
+        flex-wrap: wrap;
+    }
+
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
+
+    .feature-section{
+        flex-direction: column-reverse;
+    }
+
+    .feature-content{
+        text-align: center;
+    }
+    .btn2{
+        margin: 0 auto;
+    }
+
+    .featture-img{
+    width: 80%;
+    }
+
+    .featture-img img{
+        width: 100%;
     }
 }
