@@ -16,7 +16,7 @@ body{
 
 /* navbar style  */
 nav{
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -48,6 +48,61 @@ nav  li{
 }
 
 
+/* hero section style  */
+.hero-section{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 100px auto;
+    gap: 40px;
+    
+}
+
+ .left-section h2, p{
+    margin-bottom: 16px;
+}
+
+
+
+.left-section h2{
+font-size: 3.25rem;
+font-weight: bold;
+line-height: 70px;
+}
+
+
+
+
+.right-section{ 
+    width: calc((100% - 40px)/2) ;
+    background: url("./images/Circle design.svg");
+    aspect-ratio: 1 / 1; 
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.right-section img{
+    width: 100%;
+} 
+
+.btn{
+    font-size:1rem;
+    font-weight: bold;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    color: white;
+    background-color: #E02C6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
 
 
 
@@ -56,7 +111,22 @@ nav  li{
 
 /* medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    
+        .nav-item{
+        display: none;
+    }
+
+    .hamburger_menu{
+        display: block;
+    }
+
+    .left-section h2{
+        font-size: 1.75rem;
+        line-height: 45px;
+    }
+
+    .left-section p{
+        font-size: 0.875rem;
+    }
 }
 
 /* mobile device */
@@ -67,5 +137,24 @@ nav  li{
 
     .hamburger_menu{
         display: block;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .left-section{
+        text-align: center;
+    }
+    .left-section h2{
+        font-size: 1.75rem;
+        line-height: 45px;
+    }
+
+    .left-section p{
+        font-size: 0.875rem;
+    }
+
+    .btn{
+        margin: 0 auto;
     }
 }
