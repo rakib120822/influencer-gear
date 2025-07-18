@@ -233,6 +233,49 @@ line-height: 70px;
     gap: 8px;
 }
 
+footer{
+    text-align: center;
+    padding: 500px auto;
+    width: 100vw;
+    margin-top: 100px;
+    bottom: 0;
+    background-color: #0A0826;
+}
+
+footer h2,p,
+.social-media-container{
+    color: #FFFFFF;
+}
+
+footer h2{
+    padding-top: 50px ;
+    font-size: 1.5rem;
+    line-height: auto;
+}
+
+footer p {
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin-bottom: 0px;
+}
+
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    border-radius: 50%;
+    padding-top: 17px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 
