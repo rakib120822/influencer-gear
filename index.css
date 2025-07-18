@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* shared style  */
+
+
+
+/* navbar style  */
+nav{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:34px;
+    align-items: center;
+    color: #3A3A3A; 
+}
+
+nav  li{
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.hamburger_menu{
+    display: none;
+}
+
+
+
+
+
+ /* responsive media query */
+
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+}
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    .nav-item{
+        display: none;
+    }
+
+    .hamburger_menu{
+        display: block;
+    }
+}
